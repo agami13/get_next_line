@@ -6,7 +6,7 @@
 /*   By: ybouaoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 09:20:31 by ybouaoud          #+#    #+#             */
-/*   Updated: 2023/11/22 17:24:35 by ybouaoud         ###   ########.fr       */
+/*   Updated: 2023/11/27 20:58:04 by ybouaoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ char	*read_file(int fd, char *cup)
 char	*get_next_line(int fd)
 {
 	char		*line;
-	static char	*cup[4096];
+	static char	*cup[1024];
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (NULL);
