@@ -6,7 +6,7 @@
 /*   By: ybouaoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 09:20:26 by ybouaoud          #+#    #+#             */
-/*   Updated: 2023/11/28 13:38:53 by ybouaoud         ###   ########.fr       */
+/*   Updated: 2023/11/29 08:48:55 by ybouaoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,15 +50,3 @@ char	*get_next_line(int fd)
 	cup = new_line(cup);
 	return (line);
 }
-// #include <stdio.h>
-// int main()
-// {
-//  	int fd1;
-//  	char	*rs;
-//  	fd1 = open("test.txt", O_RDONLY);
-//  	// fd2 = open("test2.txt", O_RDONLY);
-//  	// fd3 = open("test3.txt", O_RDONLY);
-//  	while((rs = get_next_line(fd1)))
-//  		printf("%s", rs);
-//  	close (fd1);
-// }
