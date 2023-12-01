@@ -6,7 +6,7 @@
 /*   By: ybouaoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 09:20:31 by ybouaoud          #+#    #+#             */
-/*   Updated: 2023/11/29 09:02:10 by ybouaoud         ###   ########.fr       */
+/*   Updated: 2023/11/29 20:05:08 by ybouaoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,35 +50,3 @@ char	*get_next_line(int fd)
 	cup[fd] = new_line(cup[fd]);
 	return (line);
 }
-
-// #include <stdio.h>
-// int main()
-// {
-// 	int fd, fd1, fd2;
-// 	int i;
-// 	char *rs;
-
-// 	i = 0;
-// 	fd = open("file.txt", O_RDONLY);
-// 	fd1 = open("file2.txt", O_RDONLY);
-// 	fd2 = open("file3.txt", O_RDONLY);
-// 	while (i < 3)
-// 	{
-// 		printf("\n\n-------------------------------------------\n\n");
-// 		rs = get_next_line(fd);
-// 		printf("file.txt : %s", rs);
-// 		free(rs);
-// 		printf("\n\n-------------------------------------------\n\n");
-// 		rs = get_next_line(fd1);
-// 		printf("file1.txt : %s", rs);
-// 		free(rs);
-// 		printf("\n\n-------------------------------------------\n\n");
-// 		rs = get_next_line(fd2);
-// 		printf("file2.txt : %s", rs);
-// 		free(rs);
-// 		i++;
-// 	}
-// 	close (fd);
-// 	close (fd1);
-// 	close (fd2);
-// }

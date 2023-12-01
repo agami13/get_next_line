@@ -6,7 +6,7 @@
 /*   By: ybouaoud <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 09:35:18 by ybouaoud          #+#    #+#             */
-/*   Updated: 2023/11/28 20:57:17 by ybouaoud         ###   ########.fr       */
+/*   Updated: 2023/11/29 20:06:42 by ybouaoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,6 +53,8 @@ char	*ft_strjoin(char *s1, char *s2)
 	if (!s1)
 	{
 		s1 = (char *)malloc(1 * sizeof(char));
+		if (!s1)
+			return (NULL);
 		s1[0] = '\0';
 	}
 	if (!s2)
@@ -62,9 +64,8 @@ char	*ft_strjoin(char *s1, char *s2)
 		return (NULL);
 	i = -1;
 	j = 0;
-	if (s1)
-		while (s1[++i] != '\0')
-			str[i] = s1[i];
+	while (s1[++i] != '\0')
+		str[i] = s1[i];
 	while (s2[j] != '\0')
 		str[i++] = s2[j++];
 	str[ft_strlen(s1) + ft_strlen(s2)] = '\0';
